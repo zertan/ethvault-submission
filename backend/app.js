@@ -17,11 +17,19 @@ const user = require('./routes/userRoute');
 const product = require('./routes/productRoute');
 const order = require('./routes/orderRoute');
 const payment = require('./routes/paymentRoute');
+const deth = require('./routes/dETHRoute');
+const seth = require("./routes/stakedEthRoute");
+const dashboard = require("./routes/stakingDashboardRoute");
+const governance = require("./routes/governanceRoute");
 
 app.use('/api/user', user);
 app.use('/api/product', product);
 app.use('/api/order', order);
 app.use('/api/payment', payment);
+app.use('/api/deth', deth);
+app.use("/api/seth", seth);
+app.use("/api/dashboard", dashboard);
+app.use("/api/governance", governance);
 
 // deployment
 __dirname = path.resolve();
