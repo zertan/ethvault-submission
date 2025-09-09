@@ -9,5 +9,5 @@ export PRIVATE_KEY=0x...
 pnpm backend
 ```
 
-Now curl the different new endpoints to interact with the Holsky deployed smart contracts:
+Now curl the different new endpoints to interact with the Holesky deployed smart contracts, curl examples can be found in "backend/example_routes.sh".
 
